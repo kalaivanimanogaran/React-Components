@@ -4,7 +4,7 @@ import Samplecard from "./Pages/Samplecard"
 import VAccordionDemo from "./Pages/VAccordionDemo"
 import VControlledAccordionDemo from "./Pages/VControlledAcoordionDemo"
 import "./App.css"
-import VTabs from "./Components/VTabs"
+import SampleTabs from "./Pages/SampleTabs"
 function App() {
   return (
     <div className="App">
@@ -12,7 +12,7 @@ function App() {
       <Samplecard />
       <VAccordionDemo />
       <VControlledAccordionDemo />
-      <VTabs />
+      <SampleTabs />
     </div>
   )
 }
