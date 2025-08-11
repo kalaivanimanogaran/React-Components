@@ -11,7 +11,7 @@ interface TabItem {
   disabled?: boolean
   href?: string
   ariaLabel?: string
-  content: React.ReactNode
+  content?: React.ReactNode
 }
 
 interface TabPanelProps {

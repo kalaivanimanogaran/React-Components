@@ -1,12 +1,29 @@
-import React from "react"
+import React, { ReactNode } from "react"
 import {
   Card,
   CardContent,
   Typography,
   CardActions,
   Divider,
+  SxProps,
+  Theme,
 } from "@mui/material"
-const VCard = ({ title, subtitle, children, actions, sx = {} }) => {
+
+interface VCardProps {
+  title?: string
+  subtitle?: string
+  children?: ReactNode
+  actions?: ReactNode
+  sx?: SxProps<Theme>
+}
+
+const VCard: React.FC<VCardProps> = ({
+  title,
+  subtitle,
+  children,
+  actions,
+  sx = {},
+}) => {
   return (
     <Card
       sx={{

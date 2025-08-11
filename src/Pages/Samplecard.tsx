@@ -2,9 +2,9 @@ import React from "react"
 import VCard from "../Components/VCard"
 import VMediaCard from "../Components/VMediaCard"
 import VUiControlCard from "../Components/VUiControlCard"
-import { Button, Switch, Divider } from "@mui/material"
+import { Button, Divider } from "@mui/material"
 
-const Samplecard = () => {
+const Samplecard: React.FC = () => {
   return (
     <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
       {/* Normal Card */}
@@ -18,6 +18,7 @@ const Samplecard = () => {
         <Divider sx={{ my: 1 }} />
         <p>Summary: Passionate about React and UI design.</p>
       </VCard>
+
       {/* Media Card */}
       <VMediaCard
         title="Event"
@@ -31,6 +32,7 @@ const Samplecard = () => {
           </>
         }
       />
+
       {/* UI Control Card */}
       <VUiControlCard
         title="Preferences"
